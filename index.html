@@ -34,15 +34,15 @@
     }
 
     .header-background .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 350px;
-  height: auto;
-  z-index: 2;
-  filter: drop-shadow(0 0 8px rgb(0, 0, 0));
-}
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 300px;
+      height: auto;
+      z-index: 2;
+      filter: drop-shadow(0 0 8px rgb(0, 0, 0));
+    }
 
 
     .footer-background {
@@ -96,7 +96,7 @@
 
     h2 {
       margin-top: 10px;
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .form-group-container {
@@ -256,11 +256,17 @@
     }
 
     .header-background {
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8),
+        0 -8px 15px rgba(0, 0, 0, 0.5),
+        -8px 0 15px rgba(0, 0, 0, 0.6),
+        8px 0 15px rgba(0, 0, 0, 0.6);
     }
 
-    .footer-background{
-      box-shadow: 0 -8px 15px rgba(0, 0, 0, 1);
+    .footer-background {
+      box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.8),
+        0 8px 15px rgba(0, 0, 0, 0.5),
+        -8px 0 15px rgba(0, 0, 0, 0.6),
+        8px 0 15px rgba(0, 0, 0, 0.6);
     }
   </style>
 </head>
@@ -327,7 +333,7 @@
 
         <div class="form-group-flex">
           <label for="suma-plata"
-            style="font-size: 16px; color: #900000; font-weight: bold; background-color: #fff; padding: 10px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+            style="text-align: center; font-size: 16px; color: #900000; font-weight: bold; background-color: #fff; padding: 10px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
             Suma de plată: 100 RON
             <div style="font-size: 14px; text-align: center;">(aproximativ)</div>
           </label>
