@@ -96,7 +96,7 @@
 
     h2 {
       margin-top: 10px;
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .form-group-container {
@@ -256,17 +256,11 @@
     }
 
     .header-background {
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8),
-        0 -8px 15px rgba(0, 0, 0, 0.5),
-        -8px 0 15px rgba(0, 0, 0, 0.6),
-        8px 0 15px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
     }
 
     .footer-background {
-      box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.8),
-        0 8px 15px rgba(0, 0, 0, 0.5),
-        -8px 0 15px rgba(0, 0, 0, 0.6),
-        8px 0 15px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 -8px 15px rgba(0, 0, 0, 1);
     }
   </style>
 </head>
@@ -405,7 +399,7 @@
             successPopup.classList.add('show'); // Afișează mesajul de succes
             setTimeout(() => {
               programPopup.classList.add('show'); // Afișează programul
-            }, 1500); // După 1,5 secunde
+            }, 1000);
           })
           .catch(error => alert('Eroare la trimitere!'));
 
