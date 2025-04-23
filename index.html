@@ -337,8 +337,7 @@
 
       <button type="submit">Trimite Formular</button>
       <p></p>
-      <div id="error-message" style="color: rgb(255, 255, 255); display: none;">❗Trebuie să bifezi acordul părinților
-        pentru a te înscrie.❗</div>
+      <div id="error-message" style="color: rgb(255, 255, 255); display: none;">❗Trebuie să bifezi acordul părinților pentru a te înscrie.❗</div>
     </form>
   </div>
 
@@ -384,7 +383,7 @@
           nume: form.nume.value,
           prenume: form.prenume.value,
           varsta: form.varsta.value,
-          telefon: `'${form.telefon.value}'`,
+          telefon: form.telefon.value.toString(),
           judet: form.judet.value,
           oras: form.oras.value,
           email: form.email.value,
