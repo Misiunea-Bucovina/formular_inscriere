@@ -296,7 +296,7 @@
         </div>
         <div class="form-group">
           <label for="telefon">Telefon</label>
-          <input type="tel" id="telefon" name="telefon" required maxlength="15" />
+          <input type="tel" id="telefon" name="telefon" required maxlength="25" />
         </div>
       </div>
 
@@ -337,7 +337,7 @@
 
       <button type="submit">Trimite Formular</button>
       <p></p>
-      <div id="error-message" style="color: rgb(255, 255, 255); display: none;">❗Trebuie să bifezi acordul părinților pentru a te înscrie.❗</div>
+      <div id="error-message" style="color: rgb(255, 255, 255); display: none;">❗Trebuie să bifezi acordul părinților pentru a te putea înscrie.❗</div>
     </form>
   </div>
 
@@ -383,7 +383,7 @@
           nume: form.nume.value,
           prenume: form.prenume.value,
           varsta: form.varsta.value,
-          telefon: form.telefon.value.toString(),
+          telefon: `'${form.telefon.value}`,
           judet: form.judet.value,
           oras: form.oras.value,
           email: form.email.value,
